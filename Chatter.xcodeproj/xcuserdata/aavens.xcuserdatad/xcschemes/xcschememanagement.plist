@@ -4,19 +4,64 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>API.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>AsyncCore.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Chatter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Entities.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>FirebaseAPI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A29161871E3E625800F9FA69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A291618F1E3E625800F9FA69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A29161AB1E3E626E00F9FA69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A29161B31E3E626E00F9FA69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A29161E41E3E842D00F9FA69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A29161EC1E3E842D00F9FA69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A2E1F9551E3E5CE100EF0441</key>
 		<dict>
 			<key>primary</key>

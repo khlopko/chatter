@@ -48,6 +48,36 @@
                ReferencedContainer = "container:Chatter.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A291618F1E3E625800F9FA69"
+               BuildableName = "APITests.xctest"
+               BlueprintName = "APITests"
+               ReferencedContainer = "container:Chatter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A29161B31E3E626E00F9FA69"
+               BuildableName = "AsyncCoreTests.xctest"
+               BlueprintName = "AsyncCoreTests"
+               ReferencedContainer = "container:Chatter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A29161EC1E3E842D00F9FA69"
+               BuildableName = "EntitiesTests.xctest"
+               BlueprintName = "EntitiesTests"
+               ReferencedContainer = "container:Chatter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
