@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FirebaseAPI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>A2E1F9691E3E5CE100EF0441</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2E1F9841E3E5EA700EF0441</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2E1F98C1E3E5EA700EF0441</key>
 		<dict>
 			<key>primary</key>
 			<true/>
