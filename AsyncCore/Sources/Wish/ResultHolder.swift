@@ -68,14 +68,14 @@ class ResultHolder<Value> {
         guard let result = result else {
             return
         }
+        for handler in completion {
+            handler()
+        }
         switch result {
         case let .success(value):
             next.forEach { $0(value) }
         case let .failure(error):
             fail.forEach { $0(error) }
-        }
-        for handler in completion {
-            handler()
         }
     }
 }

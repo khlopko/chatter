@@ -10,5 +10,5 @@ import Foundation
 
 public protocol Request: class, Cancellable {
     associatedtype Value
-    func execute(_ completion: (Result<Value>) -> ())
+    func execute(_ completion: @escaping (Result<Value>) -> ())
 }

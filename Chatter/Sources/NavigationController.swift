@@ -1,5 +1,5 @@
 //
-//  SignUpViewController.swift
+//  NavigationController.swift
 //  Chatter
 //
 //  Created by Kirill Khlopko on 1/29/17.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-final class SignUpViewController: ViewController {
-
+class NavigationController: UINavigationController {
+    
 }

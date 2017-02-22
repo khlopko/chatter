@@ -10,8 +10,6 @@ import Foundation
 
 public final class Task<In, Out, RequestType: Request>: Cancellable where RequestType.Value == In {
 
-    public typealias Value = RequestType.Value
-
     public typealias Completion = (Result<Out>) -> ()
 
     public var isCancelled: Bool {

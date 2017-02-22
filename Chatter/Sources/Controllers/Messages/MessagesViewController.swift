@@ -8,6 +8,9 @@
 
 import UIKit
 
-final class MessagesViewController: ViewController {
+final class MessagesViewController: ViewController<MessagesView> {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

@@ -8,6 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class ViewController<View: UIView>: UIViewController {
+
+    final var contentView: View {
+        guard let contentView = view as? View else {
+            fatalError("Screen initialized with from view class!")
+        }
+        return contentView
+    }
+
+    final override func loadView() {
+        view = View()
+    }
 }
