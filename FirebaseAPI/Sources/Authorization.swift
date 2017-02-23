@@ -11,19 +11,20 @@ import Entities
 import AsyncCore
 import FirebaseAuth
 
-public final class Authorization: API.Authorization {
+final class Authorization: API.Authorization {
 
-    private let credentials: Credentials
+    var credentials: Credentials = .empty
 
-    public init(credentials: Credentials) {
-        self.credentials = credentials
+    init() {
     }
 
-    public func login() -> Wish<Entities.User> {
+    func login() -> Wish<Entities.User> {
+        let credentials = self.credentials
+        self.credentials = .empty
         return Wish { onNext, onFail in
             FIRAuth.auth()?.signIn(withEmail: credentials.email, password: credentials.password) { user, error in
                 if let user = user {
-                    onNext(FirebaseAPI.User(user))
+                    onNext(User(user))
                 } else {
                     let errorValue = error ?? NSError(domain: "", code: 0, userInfo: [:])
                     onFail(errorValue)
@@ -32,20 +33,22 @@ public final class Authorization: API.Authorization {
         }
     }
 
-    public func logout() {
-        try? FIRAuth.auth()?.signOut()
-    }
-
-    public func signup() -> Wish<Entities.User> {
+    func signup() -> Wish<Entities.User> {
+        let credentials = self.credentials
+        self.credentials = .empty
         return Wish { onNext, onFail in
             FIRAuth.auth()?.createUser(withEmail: credentials.email, password: credentials.password) { user, error in
                 if let user = user {
-                    onNext(FirebaseAPI.User(user))
+                    onNext(User(user))
                 } else {
                     let errorValue = error ?? NSError(domain: "", code: 0, userInfo: [:])
                     onFail(errorValue)
                 }
             }
         }
+    }
+
+    func logout() {
+        try? FIRAuth.auth()?.signOut()
     }
 }

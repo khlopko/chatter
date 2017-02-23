@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import API
 import FirebaseAPI
 
 @UIApplicationMain
@@ -19,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         ErrorNotification.isAutohideEnabled = true
         ErrorNotification.showTimeInterval = 5
-        FirebaseAPI.Initializer.do()
+        WebAPI.current = WebAPI.makeFirebaseAPI()
+        WebAPI.current.initialization.initialize()
         router.createWindow(rootViewController: AuthorizationViewController())
         return true
     }

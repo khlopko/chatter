@@ -1,16 +1,17 @@
 //
-//  Initializer.swift
+//  Initialization.swift
 //  Chatter
 //
 //  Created by Kirill Khlopko on 1/29/17.
 //  Copyright © 2017 Kirill. All rights reserved.
 //
 
+import API
 import Firebase
 
-public final class Initializer {
+final class Initialization: API.Initialization {
 
-    public static func `do`() {
+    public func initialize() {
         FIRApp.configure()
     }
 }

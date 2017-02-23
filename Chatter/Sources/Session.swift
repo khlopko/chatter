@@ -8,7 +8,6 @@
 
 import Entities
 import API
-import FirebaseAPI
 import AsyncCore
 
 final class Session {
@@ -17,19 +16,21 @@ final class Session {
 
     var user: Entities.User?
 
-    private var auth: API.Authorization?
+    private var auth: API.Authorization {
+        return WebAPI.current.auth
+    }
 
     func login(credentials: Credentials) -> Wish<Void>? {
-        auth = FirebaseAPI.Authorization(credentials: credentials)
-        return auth?.login().next { [weak self] user in self?.user = user }
+        auth.credentials = credentials
+        return auth.login().next { [weak self] user in self?.user = user }
     }
 
     func signup(credentials: Credentials) -> Wish<Void>? {
-        auth = FirebaseAPI.Authorization(credentials: credentials)
-        return auth?.signup().next { [weak self] user in self?.user = user }
+        auth.credentials = credentials
+        return auth.signup().next { [weak self] user in self?.user = user }
     }
 
     func logout() {
-        auth?.logout()
+        auth.logout()
     }
 }

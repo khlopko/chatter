@@ -63,7 +63,6 @@
 		A29162201E3E885500F9FA69 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A291621F1E3E885500F9FA69 /* SearchView.swift */; };
 		A29162241E3E88EF00F9FA69 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29162231E3E88EF00F9FA69 /* NavigationController.swift */; };
 		A29162261E3E8FCB00F9FA69 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29162251E3E8FCB00F9FA69 /* Credentials.swift */; };
-		A29162281E3E985B00F9FA69 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29162271E3E985B00F9FA69 /* Authorization.swift */; };
 		A291622A1E3E98B200F9FA69 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29162291E3E98B200F9FA69 /* Authorization.swift */; };
 		A29162321E3E9A4E00F9FA69 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29162311E3E9A4E00F9FA69 /* User.swift */; };
 		A29162341E3E9A6F00F9FA69 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29162331E3E9A6F00F9FA69 /* Entity.swift */; };
@@ -87,6 +86,14 @@
 		A2AC04C11E5E38B70087C97A /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04BF1E5E38B70087C97A /* AuthorizationView.swift */; };
 		A2AC04C21E5E38B70087C97A /* AuthrizationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04C01E5E38B70087C97A /* AuthrizationContainerView.swift */; };
 		A2AC04D41E5F1BA30087C97A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04D31E5F1BA30087C97A /* TabBarController.swift */; };
+		A2AC04C41E5E409F0087C97A /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04C31E5E409F0087C97A /* WebAPI.swift */; };
+		A2AC04C61E5E428E0087C97A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04C51E5E428E0087C97A /* Chat.swift */; };
+		A2AC04C81E5E42ED0087C97A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04C71E5E42ED0087C97A /* Message.swift */; };
+		A2AC04CA1E5E458E0087C97A /* FirebaseCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04C91E5E458E0087C97A /* FirebaseCalls.swift */; };
+		A2AC04CC1E5E474B0087C97A /* WebCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04CB1E5E474B0087C97A /* WebCalls.swift */; };
+		A2AC04CE1E5E47630087C97A /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04CD1E5E47630087C97A /* Authorization.swift */; };
+		A2AC04D01E5E477A0087C97A /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04CF1E5E477A0087C97A /* Initialization.swift */; };
+		A2AC04D21E5E47F10087C97A /* WebAPI+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC04D11E5E47F10087C97A /* WebAPI+Firebase.swift */; };
 		A2C65D481E492A1F0060292B /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2C65D361E492A1F0060292B /* Lato-Black.ttf */; };
 		A2C65D491E492A1F0060292B /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2C65D371E492A1F0060292B /* Lato-BlackItalic.ttf */; };
 		A2C65D4A1E492A1F0060292B /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2C65D381E492A1F0060292B /* Lato-Bold.ttf */; };
@@ -124,7 +131,7 @@
 		A2E1F9971E3E5EA700EF0441 /* FirebaseAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A2E1F9871E3E5EA700EF0441 /* FirebaseAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2E1F99A1E3E5EA700EF0441 /* FirebaseAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E1F9851E3E5EA700EF0441 /* FirebaseAPI.framework */; };
 		A2E1F99B1E3E5EA700EF0441 /* FirebaseAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2E1F9851E3E5EA700EF0441 /* FirebaseAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A2E1F9A51E3E5F7F00EF0441 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1F9A41E3E5F7F00EF0441 /* Initializer.swift */; };
+		A2E1F9A51E3E5F7F00EF0441 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1F9A41E3E5F7F00EF0441 /* Initialization.swift */; };
 		E0723034EE0A2F8ED2AA16AF /* Pods_Chatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6568FC93ACA98F4CD9B29085 /* Pods_Chatter.framework */; };
 /* End PBXBuildFile section */
 
@@ -384,7 +391,6 @@
 		A291621F1E3E885500F9FA69 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A29162231E3E88EF00F9FA69 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A29162251E3E8FCB00F9FA69 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
-		A29162271E3E985B00F9FA69 /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		A29162291E3E98B200F9FA69 /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		A29162311E3E9A4E00F9FA69 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A29162331E3E9A6F00F9FA69 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -409,6 +415,14 @@
 		A2AC04BF1E5E38B70087C97A /* AuthorizationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		A2AC04C01E5E38B70087C97A /* AuthrizationContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthrizationContainerView.swift; sourceTree = "<group>"; };
 		A2AC04D31E5F1BA30087C97A /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A2AC04C31E5E409F0087C97A /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		A2AC04C51E5E428E0087C97A /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		A2AC04C71E5E42ED0087C97A /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A2AC04C91E5E458E0087C97A /* FirebaseCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseCalls.swift; sourceTree = "<group>"; };
+		A2AC04CB1E5E474B0087C97A /* WebCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebCalls.swift; sourceTree = "<group>"; };
+		A2AC04CD1E5E47630087C97A /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		A2AC04CF1E5E477A0087C97A /* Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
+		A2AC04D11E5E47F10087C97A /* WebAPI+Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WebAPI+Firebase.swift"; sourceTree = "<group>"; };
 		A2C65D361E492A1F0060292B /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		A2C65D371E492A1F0060292B /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
 		A2C65D381E492A1F0060292B /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
@@ -451,7 +465,7 @@
 		A2E1F98D1E3E5EA700EF0441 /* FirebaseAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E1F9941E3E5EA700EF0441 /* FirebaseAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPITests.swift; sourceTree = "<group>"; };
 		A2E1F9961E3E5EA700EF0441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2E1F9A41E3E5F7F00EF0441 /* Initializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
+		A2E1F9A41E3E5F7F00EF0441 /* Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
 		A331941C346B961956E1FB64 /* Pods-FirebaseAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseAPI/Pods-FirebaseAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		F1BD83CC863AF3943CAFC53F /* Pods_FirebaseAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -685,7 +699,10 @@
 		A29161C91E3E627D00F9FA69 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A29162271E3E985B00F9FA69 /* Authorization.swift */,
+				A2AC04CD1E5E47630087C97A /* Authorization.swift */,
+				A2AC04CF1E5E477A0087C97A /* Initialization.swift */,
+				A2AC04C31E5E409F0087C97A /* WebAPI.swift */,
+				A2AC04CB1E5E474B0087C97A /* WebCalls.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -745,6 +762,8 @@
 				A29162251E3E8FCB00F9FA69 /* Credentials.swift */,
 				A29162311E3E9A4E00F9FA69 /* User.swift */,
 				A29162331E3E9A6F00F9FA69 /* Entity.swift */,
+				A2AC04C51E5E428E0087C97A /* Chat.swift */,
+				A2AC04C71E5E42ED0087C97A /* Message.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1016,10 +1035,12 @@
 		A2E1F9A31E3E5EC600EF0441 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A2E1F9A41E3E5F7F00EF0441 /* Initializer.swift */,
 				A29162291E3E98B200F9FA69 /* Authorization.swift */,
-				A291626E1E3EAA3200F9FA69 /* User.swift */,
 				A270D63A1E40F8A100A3DA9F /* ChatService.swift */,
+				A2E1F9A41E3E5F7F00EF0441 /* Initialization.swift */,
+				A2AC04C91E5E458E0087C97A /* FirebaseCalls.swift */,
+				A291626E1E3EAA3200F9FA69 /* User.swift */,
+				A2AC04D11E5E47F10087C97A /* WebAPI+Firebase.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1751,7 +1772,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A29162281E3E985B00F9FA69 /* Authorization.swift in Sources */,
+				A2AC04CE1E5E47630087C97A /* Authorization.swift in Sources */,
+				A2AC04CC1E5E474B0087C97A /* WebCalls.swift in Sources */,
+				A2AC04C41E5E409F0087C97A /* WebAPI.swift in Sources */,
+				A2AC04D01E5E477A0087C97A /* Initialization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1790,6 +1814,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29162321E3E9A4E00F9FA69 /* User.swift in Sources */,
+				A2AC04C61E5E428E0087C97A /* Chat.swift in Sources */,
+				A2AC04C81E5E42ED0087C97A /* Message.swift in Sources */,
 				A29162341E3E9A6F00F9FA69 /* Entity.swift in Sources */,
 				A29162261E3E8FCB00F9FA69 /* Credentials.swift in Sources */,
 			);
@@ -1878,10 +1904,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E1F9A51E3E5F7F00EF0441 /* Initializer.swift in Sources */,
+				A2AC04D21E5E47F10087C97A /* WebAPI+Firebase.swift in Sources */,
+				A2E1F9A51E3E5F7F00EF0441 /* Initialization.swift in Sources */,
 				A270D63B1E40F8A100A3DA9F /* ChatService.swift in Sources */,
 				A291622A1E3E98B200F9FA69 /* Authorization.swift in Sources */,
 				A291626F1E3EAA3200F9FA69 /* User.swift in Sources */,
+				A2AC04CA1E5E458E0087C97A /* FirebaseCalls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

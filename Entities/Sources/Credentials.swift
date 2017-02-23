@@ -10,6 +10,8 @@ import Foundation
 
 public struct Credentials {
 
+    public static let empty = Credentials(email: "", password: "")
+
     public let email: String
     public let password: String
 
