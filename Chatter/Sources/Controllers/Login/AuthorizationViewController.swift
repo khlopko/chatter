@@ -47,7 +47,7 @@ final class AuthorizationViewController: ViewController<AuthorizationContainerVi
 
     private var childFrame: CGRect {
         var frame = contentView.scrollView.bounds
-        let top = frame.height * 0.05
+        let top = frame.height * 0.15
         frame.origin.y += top
         frame.size.height -= top
         let left: CGFloat = 60

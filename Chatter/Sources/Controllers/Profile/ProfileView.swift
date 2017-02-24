@@ -10,6 +10,7 @@ import UIKit
 
 final class ProfileView: UIView {
 
+    let pan = UIPanGestureRecognizer()
     let logoutButton = ProfileView.makeButton(title: "Logout")
 
     override init(frame: CGRect) {
@@ -17,6 +18,7 @@ final class ProfileView: UIView {
         backgroundColor = .white
         let all: [UIView] = [logoutButton,]
         all.forEach(addSubview)
+        addGestureRecognizer(pan)
     }
 
     required init?(coder aDecoder: NSCoder) {

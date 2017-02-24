@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController<View: UIView>: UIViewController {
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+
     final var contentView: View {
         guard let contentView = view as? View else {
             fatalError("Screen initialized with from view class!")

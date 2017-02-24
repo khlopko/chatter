@@ -28,7 +28,7 @@ final class SignUpViewController: ViewController<AuthorizationView> {
                 self?.contentView.isProcessing = false
             }
             .value { [weak self] in
-                self?.router?.changeRootViewController(to: ChatsViewController(), animated: true)
+                self?.router?.changeRootViewController(to: TabBarController(), animated: true)
             }
             .fail { error in
                 ErrorNotification.show(with: error)

@@ -10,12 +10,14 @@ import UIKit
 
 final class ChatsView: UIView {
 
+    let pan = UIPanGestureRecognizer()
     let table = ChatsView.makeTable()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         let all: [UIView] = [table,]
         all.forEach(addSubview)
+        addGestureRecognizer(pan)
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -40,7 +40,7 @@ final class LoginViewController: ViewController<AuthorizationView> {
             }
             .value { [weak self] in
                 self?.view.endEditing(true)
-                self?.router?.changeRootViewController(to: ChatsViewController(), animated: true)
+                self?.router?.changeRootViewController(to: TabBarController(), animated: true)
             }
             .fail { error in
                 ErrorNotification.show(with: error)

@@ -34,9 +34,24 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>Transitions.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A2485B461E61D71100BE8F47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2485B4E1E61D71100BE8F47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A29161871E3E625800F9FA69</key>
 		<dict>
 			<key>primary</key>

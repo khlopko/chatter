@@ -15,7 +15,7 @@ final class ScreenRouter {
     func createWindow(rootViewController: UIViewController) {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
-        window?.rootViewController = makeNavigation(rootViewController: rootViewController)
+        window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
 
@@ -28,14 +28,8 @@ final class ScreenRouter {
             duration: 0.3,
             options: [.curveLinear, .transitionCrossDissolve],
             animations: { [unowned self] in
-                window.rootViewController = self.makeNavigation(rootViewController: rootViewController)
+                window.rootViewController = rootViewController
             },
             completion: nil)
-    }
-
-    private func makeNavigation(rootViewController: UIViewController) -> UINavigationController {
-        let navigation = NavigationController(rootViewController: rootViewController)
-        navigation.navigationBar.isTranslucent = false
-        return navigation
     }
 }
